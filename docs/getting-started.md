@@ -1,31 +1,33 @@
-* [Getting Started with TypeScript](#getting-started-with-typescript)
-* [TypeScript Version](#typescript-version)
+* [Iniziamo con TypeScript](#getting-started-with-typescript)
+* [Versione di TypeScript](#typescript-version)
 
-# Getting Started With TypeScript
+# Iniziamo con TypeScript
 
-TypeScript compiles into JavaScript. JavaScript is what you are actually going to execute (either in the browser or on the server). So you are going to need the following:
+TypeScript viene compilato in JavaScript. JavaScript è comunque quello che verrà eseguito (sia nel browser sia nel server).
+Avrai quindi bisogno delle seguenti cose:
 
-* TypeScript compiler (OSS available [in source](https://github.com/Microsoft/TypeScript/) and on [NPM](https://www.npmjs.com/package/typescript))
-* A TypeScript editor (you can use notepad if you want but I use [alm 🌹](https://alm-tools.github.io/). Also [lots of other IDES support it as well]( https://github.com/Microsoft/TypeScript/wiki/TypeScript-Editor-Support))
+* Un compilatore TypeScript (OSS disponibile su [in source](https://github.com/Microsoft/TypeScript/) o su [NPM](https://www.npmjs.com/package/typescript))
+* Un editor TypeScript (puoi usare anche notepad se vuoi però valuta anche [alm 🌹](https://alm-tools.github.io/). Inoltre [TypeScript è supportato comunque da molti IDE]( https://github.com/Microsoft/TypeScript/wiki/TypeScript-Editor-Support))
 
 
 ![alm editor window](https://raw.githubusercontent.com/alm-tools/alm-tools.github.io/master/screens/main.png)
 
 
-## TypeScript Version
+## Versione di TypeScript
 
-Instead of using the *stable* TypeScript compiler we will be presenting a lot of new stuff in this book that may not be associated with a version number yet. I generally recommend people to use the nightly version because **the compiler test suite only catches more bugs over time**.
+Invece di usare una versione *stabile* del compilatore TypeScript presenteremo molte nuove cose che potrebbero non ancora essere associate ad un numero di versione. In genere raccomando di usare la versione nightly perchè **il test compiler segnalerà solo piu bug nel tempo**
 
-You can install it on the command line as
+
+La puoi installare da riga di comando con:
 
 ```
 npm install -g typescript@next
 ```
 
-And now the command line `tsc` will be the latest and greatest. Various IDEs support it too, e.g.
+Cosi facendo il comando `tsc` sarà aggiornato all' ultima versione. Diversi IDE supportano anche questo:
 
-* `alm` always ships with the latest TypeScript version.
-* You can ask vscode to use this version by creating `.vscode/settings.json` with the following contents:
+* `alm` compila sempre con l'ultima versione di TypeScript.
+* In vscode, puoi usare questa versione creando il file `.vscode/settings.json` con questo contenuto:
 
 ```json
 {
@@ -33,12 +35,14 @@ And now the command line `tsc` will be the latest and greatest. Various IDEs sup
 }
 ```
 
-## Getting the Source Code
-The source for this book is available in the books github repository https://github.com/basarat/typescript-book/tree/master/code most of the code samples can be copied into alm and you can play with them as is. For code samples that need additional setup (e.g. npm modules), we will link you to the code sample before presenting the code. e.g.
+## Ottenere il codice
+Il Sorgente di questo libro è disponibile nella repository github https://github.com/basarat/typescript-book/tree/master/code
+diversi esempi di codice possono essere copiati dentro alm dove potrai giocarci liberamente. Per esempi di codice che richiedono
+impostazioni aggiunti (e.g. moduli npm) includeremo il link al codice di esempio prima di presentare il codice. e.g.
 
-`this/will/be/the/link/to/the/code.ts`
+`questo/sara/il/link/al/codice.ts`
 ```ts
-// This will be the code under discussion
+// Questo sarà il codice discusso
 ```
 
-With a dev setup out of the way let's jump into TypeScript syntax.
+Dopo aver impostato il necessario per lo sviluppo, tuffiamoci nella sintassi di TypeScript.
