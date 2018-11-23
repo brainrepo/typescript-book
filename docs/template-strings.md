@@ -1,25 +1,25 @@
-### Template Strings
-Syntactically these are strings that use backticks ( i.e. \` ) instead of single (') or double (") quotes. The motivation of Template Strings is three fold:
+### Stringhe di Template
+Sintatticamente queste sono le stringhe che usano gli apici inversi ( cioè \` ) invece di quelli singoli (') o doppi ("). La motivazione delle stringhe di template è triplice:
 
-* String Interpolation
-* Multiline Strings
-* Tagged Templates
+* Interpolazione di Stringhe
+* Stringhe multilinea
+* Template taggati
 
-#### String Interpolation
-Another common use case is when you want to generate some string out of some static strings + some variables. For this you would need some *templating logic* and this is where *template strings* get their name from. Here's how you would potentially generate an html string previously:
+#### Interpolazione di Stringhe
+Un altro caso d'uso comune è quando si vuole generare qualche stringa da alcune stringhe statiche + alcune variabili. Per questo è necessaria una *logica di templazione* e qui è dove le *stringhe di template* prendono il loro nome. Ecco come si potrebbe potenzialmente generare una stringa html:
 
 ```ts
 var lyrics = 'Never gonna give you up';
 var html = '<div>' + lyrics + '</div>';
 ```
-Now with template strings you can just do:
+Ora con i template di stringhe si può semplicemente fare:
 
 ```ts
 var lyrics = 'Never gonna give you up';
 var html = `<div>${lyrics}</div>`;
 ```
 
-Note that any placeholder inside the interpolation (`${` and `}`) is treated as a JavaScript expression and evaluated as such e.g. you can do fancy math.
+Si noti che qualsiasi segnaposto all'interno dell'interpolazione (`${{` e `}``) è trattato come un'espressione JavaScript e valutato come tale, ad esempio, si può fare matematica di fantasia.
 
 ```ts
 console.log(`1 and 1 make ${1 + 1}`);
