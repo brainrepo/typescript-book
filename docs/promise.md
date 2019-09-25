@@ -1,6 +1,6 @@
 ## Promise
 
-La classe `Promise` class è qualcosa che esiste in molti moderni motori JavaScript e può essere facilmente [polyfilled][polyfill]. La motivazione principale delle promesse è quella di portare la gestione degli errori di stile sincrono al codice di stile Async / Callback.
+La classe `Promise` è qualcosa che esiste in molti moderni motori JavaScript e può essere facilmente [polyfilled][polyfill]. La motivazione principale delle promesse è quella di portare la gestione degli errori di stile sincrono al codice di stile Async / Callback.
 
 ### Callback style code
 
