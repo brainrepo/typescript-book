@@ -4,7 +4,7 @@ La classe `Promise` è qualcosa che esiste in molti moderni motori JavaScript e 
 
 ### Callback style code
 
-In order to fully appreciate promises let's present a simple sample that proves the difficulty of creating reliable Async code with just callbacks. Consider the simple case of authoring an async version of loading JSON from a file. A synchronous version of this can be quite simple:
+Al fine di apprezzare appieno le promise presentiamo un semplice esempio che dimostra la difficoltà di creare codice Async affidabile con i soli callback. Si consideri il semplice caso di creare una versione asincrona di caricamento di JSON da un file. Una versione sincrona di questo può essere abbastanza semplice:
 
 ```ts
 import fs = require('fs');
