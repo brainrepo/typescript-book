@@ -33,7 +33,7 @@ catch (err) {
 }
 ```
 
-There are three behaviors of this simple `loadJSONSync` function, a valid return value, a file system error or a JSON.parse error. We handle the errors with a simple try/catch as you are used to when doing synchronous programming in other languages. Now let's make a good async version of such a function. A decent initial attempt with a trivial error checking logic would be as follows:
+Ci sono tre comportamenti di questa semplice funzione `loadJSONSync`, un valore di ritorno valido, un errore di file system o un errore JSON.parse. Gestiamo gli errori con un semplice try/catch come si è abituati a fare in programmazione sincrona in altri linguaggi. Ora facciamo una buona versione asincrona di tale funzione. Un tentativo iniziale decente con una logica di controllo degli errori banali sarebbe il seguente:
 
 ```ts
 import fs = require('fs');
