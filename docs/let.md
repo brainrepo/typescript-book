@@ -1,6 +1,6 @@
 ### let
 
-`var` Variables in JavaScript are *function scoped*. This is different from many other languages (C# / Java etc.) where the variables are *block scoped*. If you bring a *block scoped* mindset to JavaScript, you would expect the following to print `123`, instead it will print `456`:
+`var` Le variabili in JavaScript sono *function scoped*. Questo è diverso da molti altri linguaggi (C# / Java ecc.) dove le variabili sono *block scoped*. Se si porta una mentalità *block scoped* in JavaScript, ci si aspetterebbe che quanto segue stampi `123`, invece stamperà `456`:
 
 ```ts
 var foo = 123;
@@ -9,7 +9,7 @@ if (true) {
 }
 console.log(foo); // 456
 ```
-This is because `{` does not create a new *variable scope*. The variable `foo` is the same inside the if *block* as it is outside the if block. This is a common source of errors in JavaScript programming. This is why TypeScript (and ES6) introduces the `let` keyword to allow you to define variables with true *block scope*. That is if you use `let` instead of `var` you get a true unique element disconnected from what you might have defined outside the scope. The same example is demonstrated with `let`:
+Questo perché `{` non crea un nuovo *variable scope*. La variabile `foo` è la stessa all'interno del *blocco* if come lo è all'esterno del blocco if. Questa è una fonte comune di errori nella programmazione JavaScript. Per questo motivo TypeScript (ed ES6) introduce la parola chiave `let` per consentire di definire variabili con vero *block scope*. Questo se si usa `let` invece di `var` si ottiene un vero elemento unico disconnesso da ciò che si potrebbe aver definito al di fuori dello scope. Lo stesso esempio è dimostrato con `let`:
 
 ```ts
 let foo = 123;
